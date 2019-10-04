@@ -7,6 +7,7 @@ namespace RoleplayGame.Items
     {
         Magic = 1,
         Robes = 2,
+        Fierro = 5,
     }
 
     /// <summary>
@@ -25,6 +26,7 @@ namespace RoleplayGame.Items
             {
                 case ItemType.Magic: return new Magic();
                 case ItemType.Robes: return new Robes();
+                case ItemType.Fierro: return new Fierro();
 
                 default: return null;
             }
