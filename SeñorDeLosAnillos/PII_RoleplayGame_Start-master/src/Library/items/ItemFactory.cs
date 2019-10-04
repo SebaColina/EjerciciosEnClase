@@ -11,6 +11,7 @@ namespace RoleplayGame.Items
         Gorra = 4,
         Fierro = 5,
         Crocs = 6,
+        GorraMagica = 7,
     }
 
 
@@ -34,6 +35,8 @@ namespace RoleplayGame.Items
                 case ItemType.Gorra: return new Gorra();
                 case ItemType.Cadena: return new Cadena();
                 case ItemType.Crocs: return new Crocs();
+                case ItemType.GorraMagica: return new GorraMagica();
+
                 default: return null;
             }
         }
