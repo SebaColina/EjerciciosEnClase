@@ -7,8 +7,9 @@ namespace RoleplayGame.Items
     {
         Magic = 1,
         Robes = 2,
+        Cadena = 3,
         Gorra = 4,
-    }
+        }
 
     /// <summary>
     /// Creador de elementos. 
@@ -27,7 +28,7 @@ namespace RoleplayGame.Items
                 case ItemType.Magic: return new Magic();
                 case ItemType.Robes: return new Robes();
                 case ItemType.Gorra: return new Gorra();
-
+                case ItemType.Cadena: return new Cadena();
                 default: return null;
             }
         }
