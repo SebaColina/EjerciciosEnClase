@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+
+
 namespace RoleplayGame.Items
 {
     /// <summary>
@@ -9,11 +12,13 @@ namespace RoleplayGame.Items
         /// El poder de ataque
         /// </summary>
         /// <value></value>
+        /// 
+        public List<Pin> Pines { get; set; }
         public int AttackPower
         {
             get
             {
-                return 0;
+                return 0 + 10 * Pines.Count;
             }
         }
 

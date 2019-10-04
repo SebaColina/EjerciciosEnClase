@@ -182,11 +182,18 @@ namespace Program
         /// <param name="item">El item al que se agregarán objectos</param>
         protected virtual void AddObjectsToItem(IItem item)
         {
-            /*
-                Si un item se compone de otros (como un Guante de Poder),
-                puedes agregar aquí el código necesario para interactuar
-                con el usuario.
-            */
+    
+          Console.WriteLine("How many pines do you want?");
+          int cantidad_pines = Int32.Parse(Console.ReadLine());
+          for (int i = 0; i < cantidad_pines - 1; i++)
+          {
+              if (item is Crocs)
+              { 
+                 ((Crocs)item).Pines.Add(new Pin());
+              }
+              
+          }
+          
         }
 
         /// <summary>
